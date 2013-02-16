@@ -54,6 +54,7 @@ public class LotteryBall implements Runnable {
                         int endY,
                         int speed, 
                         LotteryCanvas canvas) {
+        this.image = img;
         this.value = value;
         this.xPosition = xPos;
         this.yPosition = yPos;
@@ -87,8 +88,6 @@ public class LotteryBall implements Runnable {
             } catch (InterruptedException ie) {
                 // do nothing
             }
-            
-            System.out.println("\tMoving ball " + value);
         }
     }
 
