@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+
+    <id>bin</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+
+        <fileSet>
+            <directory>${project.basedir}/src/main/resources/html</directory>
+            <outputDirectory></outputDirectory>
+            <fileMode>0755</fileMode>
+            <includes>
+                <include>lottery-applet.html</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.basedir}/src/main/resources/images</directory>
+            <outputDirectory></outputDirectory>
+            <fileMode>0755</fileMode>
+            <includes>
+                <include>*.gif</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.basedir}/target</directory>
+            <outputDirectory></outputDirectory>
+            <fileMode>0755</fileMode>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+    
+</assembly>
+
