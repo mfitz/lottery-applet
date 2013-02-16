@@ -24,7 +24,6 @@ import java.awt.Image;
 import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 
 /**
  * This animated applet allows the user to generate 6 unique 'lottery' numbers
