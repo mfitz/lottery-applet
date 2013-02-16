@@ -279,26 +279,6 @@ public class LotteryCanvas extends Applet implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         
-        System.out.println("Code base: " + getCodeBase() );
-        System.out.println("Doc base: " + getDocumentBase() );
-        
-        String codeBaseDir = getCodeBase().getPath().toString();
-        File imageFile =  
-            new File(codeBaseDir.toString(), 
-                        pathToImageDir + "num1.gif");
-        if (imageFile.exists() == false) {
-            // fail fast - applet doesn't make sense without the image
-            throw new RuntimeException("Could not find image file " 
-                                        + imageFile.getAbsolutePath() );
-        } else {
-            System.out.println("Found image file at " 
-                                + imageFile.getAbsolutePath() );
-        }
-        
-        for (int i = 0; i < ballImages.length; i++) {
-            System.out.println(ballImages[i]);
-        }
-        
         Button clicked = (Button) e.getSource();
 
         if (clicked == playButton) {
