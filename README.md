@@ -3,6 +3,8 @@ Lottery Applet
 
 An animated Java applet to randomly pick 6 lottery number between 1 and 49. I wrote the applet itself back in 2001, but I have recently wrapped it in a Maven project. 
 
+![Lottery applet screenshot](/src/main/resources/images/lottery-applet.png "Lottery applet screenshot")
+
 Building
 ===========
 
