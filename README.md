@@ -18,7 +18,7 @@ use:
 Running the applet
 ============
 
-Having built a distro, you can unpack the subsequent zip file to a local directory, wherein you will see a new subdirectory called something like "lottery-applet-1.0-SNAPSHOT". Inside this directory you will find a jar file, an image file, and an HTML file. You can run the applet locally using the JDK's appletviewer tool:
+Having built a distro, you can unpack the subsequent zip file to a local directory. There you will see a new subdirectory called something like "lottery-applet-1.0-SNAPSHOT". Inside this directory you will find a jar file, an image file, and an HTML file. You can run the applet locally using the JDK's appletviewer tool:
 
     appletviewer lottery-applet.html
 
@@ -34,4 +34,6 @@ Everything the applet needs at runtime is in the same directory when you build a
     ../../src/main/resources/images/
     
 ![Lottery applet image-path param](/src/main/resources/images/lottery-image-path-eclipse.png "Lottery applet image-path")    
+
+I also set the width to 400 pixels and the height to 300. Note that the minimum workable width is 300 pixels (each ball image is 50 pixels and there are six).
 
