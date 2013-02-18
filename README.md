@@ -29,7 +29,7 @@ You could also drop the 3 files into the same directory of a web server and serv
 Running the applet in an IDE
 ============
 
-When you build and unpack the distro, everything the applet needs at runtime is in the same directory. However, this is not the case when launching the applet inside your IDE. The lottery ball image files are in a different directory from the applet's runtime codebase, so we need a way to tell the applet where to find them. For this reason, I added an applet parameter ("image-path"). You should use a relative path for this parameter; in Eclipse, I configured it to point at:
+Everything the applet needs at runtime is in the same directory when you build and unpack the distro. However, this is not the case when launching the applet inside your IDE. The lottery ball image files are in a different directory from the applet's runtime codebase, so we need a way to tell the applet where to find them. For this reason, I added an applet parameter ("image-path"). You should use a relative path for this parameter; in Eclipse, I configured it to point at:
 
     ../../src/main/resources/images/
     
