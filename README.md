@@ -18,7 +18,7 @@ use:
 Running the applet
 ============
 
-Having built a distro, you can unpack the subsequent zip file to a local directory. There you will see a new subdirectory called something like "lottery-applet-1.0-SNAPSHOT". Inside this directory you will find a jar file, an image file, and an HTML file. You can run the applet locally using the JDK's appletviewer tool:
+Having built a distro, you can unpack the subsequent zip file to a local directory. There you will see a new subdirectory called something like "lottery-applet-1.0-SNAPSHOT". Inside this directory you will find a jar file, some GIF files (49 in total - 1 for each lottery ball), and an HTML file. You can run the applet locally using the JDK's appletviewer tool:
 
     appletviewer lottery-applet.html
 
@@ -29,7 +29,7 @@ You could also drop the 3 files into the same directory of a web server and serv
 Running the applet in an IDE
 ============
 
-Everything the applet needs at runtime is in the same directory when you build and unpack the distro. However, this is not the case when launching the applet inside your IDE. The lottery ball image files are in a different directory from the applet's runtime codebase, so we need a way to tell the applet where to find them. For this reason, I added an applet parameter ("image-path"). You should use a relative path for this parameter; in Eclipse, I configured it to point at:
+Everything the applet needs at runtime is in the same directory when you build and unpack the distro. However, this is not the case when launching the applet inside your IDE. The lottery ball image files are in a different directory from the applet's runtime codebase, so we need a way to tell the applet where to find them. For this reason, I added an applet parameter ("image-path"). You should use a relative path for this parameter; in Eclipse, I configured it thus (note the trailing slash character):
 
     ../../src/main/resources/images/
     
