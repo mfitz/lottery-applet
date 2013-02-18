@@ -18,7 +18,7 @@ use:
 Running the applet
 ============
 
-You can then unpack the subsequent zip file to a local directory, wherein you will see a new subdirectory called something like "lottery-applet-1.0-SNAPSHOT". Inside this directory you will find a jar file, an image file, and an HTML file. You can run the applet locally using the JDK's appletviewer tool:
+Having built a distro, you can unpack the subsequent zip file to a local directory, wherein you will see a new subdirectory called something like "lottery-applet-1.0-SNAPSHOT". Inside this directory you will find a jar file, an image file, and an HTML file. You can run the applet locally using the JDK's appletviewer tool:
 
     appletviewer lottery-applet.html
 
